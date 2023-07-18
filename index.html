@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <style>
+    @font-face {
+      font-family: " Barlow Semi condensed";
+      src: url("/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf");
+    }
+    body {
+      font-family: "Barlow Semi Condensed";
+      background-color:  hsl(0, 0%, 81%);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:(1fr 1fr 1fr 1fr 1fr);
+      gap: 10px;
+    }
+    .container .box img {
+      float: left;
+      margin:0px 20px;
+      border-radius: 50%;
+    }
+    .container .box:nth-of-type(1){
+      background-image: url(images/bg-pattern-quotation.svg);
+      background-repeat:no-repeat ;
+      background-position: top right;
+      background-color: hsl(263, 55%, 52%);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+      color: white;
+    }
+    .container .box:nth-of-type(2){
+      background-color: hsl(217, 19%, 35%);
+      padding: 20px;
+      margin: 20px;
+      color: white;
+      border-radius: 5px;
+    }
+    .container .box:nth-of-type(3){
+      background-color: hsl(0, 0%, 100%);
+      padding: 20px;
+      margin: 20px;
+      color: rgb(22, 22, 22);
+      border-radius: 5px;
+    }
+    .container .box:nth-of-type(4){
+      background-color: hsl(219, 29%, 14%);
+      margin: 20px;
+      padding: 20px;
+      border-radius: 5px;
+      color: white;
+    }
+    .container .box:nth-of-type(5){
+      background-color: hsl(0, 0%, 100%);
+      color: rgb(58, 55, 55);
+      padding: 20px;
+      margin: 20px;
+      border-radius: 5px;
+    }
+    @media screen and (min-width:1000px) {
+      .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        " box1 box1 box2 box3"
+        " box4 box5 box5 box3 ";
+        gap: 2px;
+      }
+      .container .box:nth-of-type(1) {
+        grid-area: box1;
+      }
+      .container .box:nth-of-type(2) {
+        grid-area: box2;
+      }
+      .container .box:nth-of-type(3){
+        grid-area: box4;
+      }
+      .container .box:nth-of-type(4) {
+        grid-area: box5;
+      }
+      .container .box:nth-of-type(5){
+        grid-area: box3;
+      }
+      
+    }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <span>
+        <img src="images/image-daniel.jpg" alt="">
+        <h4>Daniel Clifford</h4>
+        <p>Verified Graduate</p>
+      </span>
+      <h2>I received a job offer mid-course, and the subjects i learned were current, if not more so, in the company i joined. I honestly feel i got every penny's worth.</h2>
+      <p>" I was an EMT for many years before i joined the bootcoma. ive beeen looking to mkae a transition and hav heard some people who had an amazing experience here. I signed up for the free intro cousres and found it incredibly fun! i enrroled shortly thereafter. The next 12  weekss was the best mishf gruellinf time of myblife since completing the cousre fhhjs sucessfully switvhed carrer workunf a a software engineer at vr startup
+        "</p>
+    </div>
+    <div class="box"><span>
+      <img src="images/image-jonathan.jpg" alt="">
+      <h4>jonathan Walterd</h4>
+      <p> Verified Graduate</p>
+    </span>
+    <h2>The team was very supportive and kept me motivated</h2>
+         <p>"I started as a total newbie with virtually no codiing skils i now wprk as a mobile engineer for a big company. thia was one of the best investment i've made in myself"</p>
+  </div>
+    <div class="box">
+      <span>
+        <img src="images/image-jeanette.jpg" alt="">
+        <h4>Jeanette Harmon </h4>
+        <p> Verifid Graduate</p>
+      </span>
+      <h2>An overall wonderful and rewaarding experience</h2>
+      <p>"I started as a total newbie with virtually no codiing skils i now wprk as a mobile engineer for a big company. thia was one of the best investment i've made in myself"</p>
+    </div>
+    <div class="box">
+      <span>
+        <img src="images/image-patrick.jpg" alt="">
+        <h4>Patrick Abrams</h4>
+        <p>Verified Graduate</p>
+      </span>
+      <h2>I received a job offer mid-course, and the subjects i learned were current, if not more so, in the company i joined. I honestly feel i got every penny's worth.</h2>
+      <p>" I was an EMT for many years before i joined the bootcoma. ive beeen looking to mkae a transition and hav heard some people who had an amazing experience here. I signed up for the free intro cousres and found it incredibly fun! i enrroled shortly thereafter. The next 12  weekss was the best mishf gruellinf time of myblife since completing the cousre fhhjs sucessfully switvhed carrer workunf a a software engineer at vr startup
+        "</p>
+    </div>
+    <div class="box">
+      <span>
+        <img src="images/image-kira.jpg" alt="">
+        <h4>Kira  White</h4>
+        <p>Verified Graduate</p>
+      </span>
+      <h2> Such aa life- changing experience Highly recommended!</h2>
+      <p>" I was an EMT for many years before i joined the bootcoma. ive beeen looking to mkae a transition and hav heard some people who had an amazing experience here. I signed up for the free intro cousres and found it incredibly fun! i enrroled shortly thereafter. The next 12  weekss was the best mishf gruellinf time of myblife since completing the cousre fhhjs sucessfully switvhed carrer workunf a a software engineer at vr startup</p>
+    </div>
+  </div>
+</body>
+</html>
